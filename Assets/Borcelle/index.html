@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href="/Assets/style.css" rel="stylesheet">
+
+<!-- <link href ="/Assets/bootstrap-5.3.0/css/bootstrap.min.css" rel="stylesheet"> -->
+    <script src="/Assets/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
+    <title>Index Page</title>
+</head>
+<body class="bg-zinc-100 font-sans leading-normal tracking-normal">
+    <div class="flex h-screen">
+        
+        <div class="navbar w-64 space-y-6 px-2 py-7 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+            
+            <a href="#" class="text-blue-600 font-bold text-4xl">Borcelle</a>
+            
+            <nav>
+                <a href="./index.html" class="nav-link">
+                    <box-icon type='solid' name='dashboard'></box-icon>
+                    Dashboard
+                </a>
+                <a href="./Collections.html" class="nav-link">
+                    <box-icon name='collection'></box-icon>
+                    Collections
+                </a>
+                <a href="./Product.html" class="nav-link">
+                    <box-icon name='store'></box-icon>
+                    Products
+                </a>
+                <a href="./Order.html" class="nav-link">
+                    <box-icon name='shopping-bag'></box-icon>
+                    Orders
+                </a>
+                <a href="./Customer.html" class="nav-link">
+                    <box-icon name='group'></box-icon>
+                    Customers
+                </a>
+                <a href="#" class="nav-link">
+                    <box-icon name='user-circle'></box-icon>
+                    Edit Profile
+                </a>
+            </nav>
+            
+        </div>
+
+        
+        <div class="flex-1 flex flex-col overflow-hidden">
+            
+            <header class="flex justify-between items-center p-6">
+                <div class="text-2xl font-semibold text-zinc-700">Dashboard</div>
+            </header>
+
+            
+            <main class="flex-1 overflow-x-hidden overflow-y-auto">
+                <div class="container mx-auto px-6 py-8">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white p-4 shadow rounded-lg">
+                            <div class="flex items-center">
+                                <div class="p-3 bg-zinc-200 rounded-full">
+                                    💵
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-sm font-medium text-zinc-600">Total Revenue</p>
+                                    <p class="text-xl font-semibold">$ 0</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 shadow rounded-lg">
+                            <div class="flex items-center">
+                                <div class="p-3 bg-zinc-200 rounded-full">
+                                    📦
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-sm font-medium text-zinc-600">Total Orders</p>
+                                    <p class="text-xl font-semibold">0</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 shadow rounded-lg">
+                            <div class="flex items-center">
+                                <div class="p-3 bg-zinc-200 rounded-full">
+                                    👥
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-sm font-medium text-zinc-600">Total Customer</p>
+                                    <p class="text-xl font-semibold">0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="mt-8">
+                        <div class="bg-white p-6 shadow rounded-lg">
+                            <p class="text-sm font-medium text-zinc-600">Sales Chart ($)</p>
+                            <div class="mt-4">
+                                <svg class="recharts-surface" width="1133" height="300" viewBox="0 0 1133 300" style="width: 100%; height: 100%;"><title></title><desc></desc><defs><clipPath id="recharts38-clip"><rect x="60" y="5" height="260" width="1053"></rect></clipPath></defs><g class="recharts-layer recharts-line"><path stroke="#8884d8" stroke-width="1" fill="none" width="1053" height="260" class="recharts-curve recharts-line-curve" d="M60,265C91.909,265,123.818,265,155.727,265C187.636,265,219.545,265,251.455,265C283.364,265,315.273,265,347.182,265C379.091,265,411,265,442.909,265C474.818,265,506.727,265,538.636,265C570.545,265,602.455,265,634.364,265C666.273,265,698.182,265,730.091,265C762,265,793.909,265,825.818,265C857.727,265,889.636,265,921.545,265C953.455,265,985.364,265,1017.273,265C1049.182,265,1081.091,265,1113,265"></path><g class="recharts-layer"></g><g class="recharts-layer recharts-line-dots"><circle r="3" stroke="#8884d8" stroke-width="1" fill="#fff" width="1053" height="260" cx="60" cy="265" class="recharts-dot recharts-line-dot"></circle><circle r="3" stroke="#8884d8" stroke-width="1" fill="#fff" width="1053" height="260" cx="155.72727272727275" cy="265" class="recharts-dot recharts-line-dot"></circle><circle r="3" stroke="#8884d8" stroke-width="1" fill="#fff" width="1053" height="260" cx="251.45454545454547" cy="265" class="recharts-dot recharts-line-dot"></circle><circle r="3" stroke="#8884d8" stroke-width="1" fill="#fff" width="1053" height="260" cx="347.1818181818182" cy="265" class="recharts-dot recharts-line-dot"></circle><circle r="3" stroke="#8884d8" stroke-width="1" fill="#fff" width="1053" height="260" cx="442.90909090909093" cy="265" class="recharts-dot recharts-line-dot"></circle><circle r="3" stroke="#8884d8" stroke-width="1" fill="#fff" width="1053" height="260" cx="538.6363636363637" cy="265" class="recharts-dot recharts-line-dot"></circle><circle r="3" stroke="#8884d8" stroke-width="1" fill="#fff" width="1053" height="260" cx="634.3636363636364" cy="265" class="recharts-dot recharts-line-dot"></circle><circle r="3" stroke="#8884d8" stroke-width="1" fill="#fff" width="1053" height="260" cx="730.0909090909091" cy="265" class="recharts-dot recharts-line-dot"></circle><circle r="3" stroke="#8884d8" stroke-width="1" fill="#fff" width="1053" height="260" cx="825.8181818181819" cy="265" class="recharts-dot recharts-line-dot"></circle><circle r="3" stroke="#8884d8" stroke-width="1" fill="#fff" width="1053" height="260" cx="921.5454545454546" cy="265" class="recharts-dot recharts-line-dot"></circle><circle r="3" stroke="#8884d8" stroke-width="1" fill="#fff" width="1053" height="260" cx="1017.2727272727274" cy="265" class="recharts-dot recharts-line-dot"></circle><circle r="3" stroke="#8884d8" stroke-width="1" fill="#fff" width="1053" height="260" cx="1113" cy="265" class="recharts-dot recharts-line-dot"></circle></g></g><g class="recharts-cartesian-grid"><g class="recharts-cartesian-grid-horizontal"><line stroke="#ccc" stroke-dasharray="5 5" fill="none" x="60" y="5" width="1053" height="260" x1="60" y1="265" x2="1113" y2="265"></line><line stroke="#ccc" stroke-dasharray="5 5" fill="none" x="60" y="5" width="1053" height="260" x1="60" y1="200" x2="1113" y2="200"></line><line stroke="#ccc" stroke-dasharray="5 5" fill="none" x="60" y="5" width="1053" height="260" x1="60" y1="135" x2="1113" y2="135"></line><line stroke="#ccc" stroke-dasharray="5 5" fill="none" x="60" y="5" width="1053" height="260" x1="60" y1="70" x2="1113" y2="70"></line><line stroke="#ccc" stroke-dasharray="5 5" fill="none" x="60" y="5" width="1053" height="260" x1="60" y1="5" x2="1113" y2="5"></line></g><g class="recharts-cartesian-grid-vertical"><line stroke="#ccc" stroke-dasharray="5 5" fill="none" x="60" y="5" width="1053" height="260" x1="60" y1="5" x2="60" y2="265"></line><line stroke="#ccc" stroke-dasharray="5 5" fill="none" x="60" y="5" width="1053" height="260" x1="155.72727272727275" y1="5" x2="155.72727272727275" y2="265"></line><line stroke="#ccc" stroke-dasharray="5 5" fill="none" x="60" y="5" width="1053" height="260" x1="251.45454545454547" y1="5" x2="251.45454545454547" y2="265"></line><line stroke="#ccc" stroke-dasharray="5 5" fill="none" x="60" y="5" width="1053" height="260" x1="347.1818181818182" y1="5" x2="347.1818181818182" y2="265"></line><line stroke="#ccc" stroke-dasharray="5 5" fill="none" x="60" y="5" width="1053" height="260" x1="442.90909090909093" y1="5" x2="442.90909090909093" y2="265"></line><line stroke="#ccc" stroke-dasharray="5 5" fill="none" x="60" y="5" width="1053" height="260" x1="538.6363636363637" y1="5" x2="538.6363636363637" y2="265"></line><line stroke="#ccc" stroke-dasharray="5 5" fill="none" x="60" y="5" width="1053" height="260" x1="634.3636363636364" y1="5" x2="634.3636363636364" y2="265"></line><line stroke="#ccc" stroke-dasharray="5 5" fill="none" x="60" y="5" width="1053" height="260" x1="730.0909090909091" y1="5" x2="730.0909090909091" y2="265"></line><line stroke="#ccc" stroke-dasharray="5 5" fill="none" x="60" y="5" width="1053" height="260" x1="825.8181818181819" y1="5" x2="825.8181818181819" y2="265"></line><line stroke="#ccc" stroke-dasharray="5 5" fill="none" x="60" y="5" width="1053" height="260" x1="921.5454545454546" y1="5" x2="921.5454545454546" y2="265"></line><line stroke="#ccc" stroke-dasharray="5 5" fill="none" x="60" y="5" width="1053" height="260" x1="1017.2727272727274" y1="5" x2="1017.2727272727274" y2="265"></line><line stroke="#ccc" stroke-dasharray="5 5" fill="none" x="60" y="5" width="1053" height="260" x1="1113" y1="5" x2="1113" y2="265"></line></g></g><g class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"><line orientation="bottom" width="1053" height="30" x="60" y="265" class="recharts-cartesian-axis-line" stroke="#666" fill="none" x1="60" y1="265" x2="1113" y2="265"></line><g class="recharts-cartesian-axis-ticks"><g class="recharts-layer recharts-cartesian-axis-tick"><line orientation="bottom" width="1053" height="30" x="60" y="265" class="recharts-cartesian-axis-tick-line" stroke="#666" fill="none" x1="60" y1="271" x2="60" y2="265"></line><text orientation="bottom" width="1053" height="30" stroke="none" x="60" y="273" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="60" dy="0.71em">Jan</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line orientation="bottom" width="1053" height="30" x="60" y="265" class="recharts-cartesian-axis-tick-line" stroke="#666" fill="none" x1="155.72727272727275" y1="271" x2="155.72727272727275" y2="265"></line><text orientation="bottom" width="1053" height="30" stroke="none" x="155.72727272727275" y="273" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="155.72727272727275" dy="0.71em">Feb</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line orientation="bottom" width="1053" height="30" x="60" y="265" class="recharts-cartesian-axis-tick-line" stroke="#666" fill="none" x1="251.45454545454547" y1="271" x2="251.45454545454547" y2="265"></line><text orientation="bottom" width="1053" height="30" stroke="none" x="251.45454545454547" y="273" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="251.45454545454547" dy="0.71em">Mar</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line orientation="bottom" width="1053" height="30" x="60" y="265" class="recharts-cartesian-axis-tick-line" stroke="#666" fill="none" x1="347.1818181818182" y1="271" x2="347.1818181818182" y2="265"></line><text orientation="bottom" width="1053" height="30" stroke="none" x="347.1818181818182" y="273" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="347.1818181818182" dy="0.71em">Apr</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line orientation="bottom" width="1053" height="30" x="60" y="265" class="recharts-cartesian-axis-tick-line" stroke="#666" fill="none" x1="442.90909090909093" y1="271" x2="442.90909090909093" y2="265"></line><text orientation="bottom" width="1053" height="30" stroke="none" x="442.90909090909093" y="273" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="442.90909090909093" dy="0.71em">May</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line orientation="bottom" width="1053" height="30" x="60" y="265" class="recharts-cartesian-axis-tick-line" stroke="#666" fill="none" x1="538.6363636363637" y1="271" x2="538.6363636363637" y2="265"></line><text orientation="bottom" width="1053" height="30" stroke="none" x="538.6363636363637" y="273" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="538.6363636363637" dy="0.71em">Jun</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line orientation="bottom" width="1053" height="30" x="60" y="265" class="recharts-cartesian-axis-tick-line" stroke="#666" fill="none" x1="634.3636363636364" y1="271" x2="634.3636363636364" y2="265"></line><text orientation="bottom" width="1053" height="30" stroke="none" x="634.3636363636364" y="273" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="634.3636363636364" dy="0.71em">Jul</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line orientation="bottom" width="1053" height="30" x="60" y="265" class="recharts-cartesian-axis-tick-line" stroke="#666" fill="none" x1="730.0909090909091" y1="271" x2="730.0909090909091" y2="265"></line><text orientation="bottom" width="1053" height="30" stroke="none" x="730.0909090909091" y="273" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="730.0909090909091" dy="0.71em">Aug</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line orientation="bottom" width="1053" height="30" x="60" y="265" class="recharts-cartesian-axis-tick-line" stroke="#666" fill="none" x1="825.8181818181819" y1="271" x2="825.8181818181819" y2="265"></line><text orientation="bottom" width="1053" height="30" stroke="none" x="825.8181818181819" y="273" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="825.8181818181819" dy="0.71em">Sep</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line orientation="bottom" width="1053" height="30" x="60" y="265" class="recharts-cartesian-axis-tick-line" stroke="#666" fill="none" x1="921.5454545454546" y1="271" x2="921.5454545454546" y2="265"></line><text orientation="bottom" width="1053" height="30" stroke="none" x="921.5454545454546" y="273" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="921.5454545454546" dy="0.71em">Oct</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line orientation="bottom" width="1053" height="30" x="60" y="265" class="recharts-cartesian-axis-tick-line" stroke="#666" fill="none" x1="1017.2727272727274" y1="271" x2="1017.2727272727274" y2="265"></line><text orientation="bottom" width="1053" height="30" stroke="none" x="1017.2727272727274" y="273" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="1017.2727272727274" dy="0.71em">Nov</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line orientation="bottom" width="1053" height="30" x="60" y="265" class="recharts-cartesian-axis-tick-line" stroke="#666" fill="none" x1="1113" y1="271" x2="1113" y2="265"></line><text orientation="bottom" width="1053" height="30" stroke="none" x="1113" y="273" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="1113" dy="0.71em">Dec</tspan></text></g></g></g><g class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"><line orientation="left" width="60" height="260" x="0" y="5" class="recharts-cartesian-axis-line" stroke="#666" fill="none" x1="60" y1="5" x2="60" y2="265"></line><g class="recharts-cartesian-axis-ticks"><g class="recharts-layer recharts-cartesian-axis-tick"><line orientation="left" width="60" height="260" x="0" y="5" class="recharts-cartesian-axis-tick-line" stroke="#666" fill="none" x1="54" y1="265" x2="60" y2="265"></line><text orientation="left" width="60" height="260" stroke="none" x="52" y="265" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" fill="#666"><tspan x="52" dy="0.355em">0</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line orientation="left" width="60" height="260" x="0" y="5" class="recharts-cartesian-axis-tick-line" stroke="#666" fill="none" x1="54" y1="200" x2="60" y2="200"></line><text orientation="left" width="60" height="260" stroke="none" x="52" y="200" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" fill="#666"><tspan x="52" dy="0.355em">1</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line orientation="left" width="60" height="260" x="0" y="5" class="recharts-cartesian-axis-tick-line" stroke="#666" fill="none" x1="54" y1="135" x2="60" y2="135"></line><text orientation="left" width="60" height="260" stroke="none" x="52" y="135" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" fill="#666"><tspan x="52" dy="0.355em">2</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line orientation="left" width="60" height="260" x="0" y="5" class="recharts-cartesian-axis-tick-line" stroke="#666" fill="none" x1="54" y1="70" x2="60" y2="70"></line><text orientation="left" width="60" height="260" stroke="none" x="52" y="70" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" fill="#666"><tspan x="52" dy="0.355em">3</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick"><line orientation="left" width="60" height="260" x="0" y="5" class="recharts-cartesian-axis-tick-line" stroke="#666" fill="none" x1="54" y1="5" x2="60" y2="5"></line><text orientation="left" width="60" height="260" stroke="none" x="52" y="12" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" fill="#666"><tspan x="52" dy="0.355em">4</tspan></text></g></g></g></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
