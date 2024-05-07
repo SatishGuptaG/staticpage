@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href="/Assets/style.css" rel="stylesheet">
+
+<!-- <link href ="/Assets/bootstrap-5.3.0/css/bootstrap.min.css" rel="stylesheet"> -->
+    <script src="/Assets/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
+    <title>Product</title>
+</head>
+<body class="bg-zinc-100 font-sans leading-normal tracking-normal">
+    <div class="flex h-screen">
+        
+        <div class="navbar w-64 space-y-6 px-2 py-7 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+            
+            <a href="#" class="text-blue-600 font-bold text-4xl">Borcelle</a>
+            
+            <nav>
+                <a href="./index.html" class="nav-link">
+                    <box-icon type='solid' name='dashboard'></box-icon>
+                    Dashboard
+                </a>
+                <a href="./Collections.html" class="nav-link">
+                    <box-icon name='collection'></box-icon>
+                    Collections
+                </a>
+                <a href="./Product.html" class="nav-link">
+                    <box-icon name='store'></box-icon>
+                    Products
+                </a>
+                <a href="./Order.html" class="nav-link">
+                    <box-icon name='shopping-bag'></box-icon>
+                    Orders
+                </a>
+                <a href="./Customer.html" class="nav-link">
+                    <box-icon name='group'></box-icon>
+                    Customers
+                </a>
+                <a href="#" class="nav-link">
+                    <box-icon name='user-circle'></box-icon>
+                    Edit Profile
+                </a>
+            </nav>
+            
+        </div>
+
+        
+        <div class="flex-1 flex flex-col overflow-hidden">
+            
+            <header class="flex justify-between items-center p-6">
+                <h1 class="text-2xl font-bold">Product</h1>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="window.location.href = './index.html'">
+                 Create Product
+                </button>
+            </header>
+            <div class="mb-4">
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-zinc-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Search...">
+            </div>
+            
+            <main class="flex-1 overflow-x-hidden overflow-y-auto">
+                <div class="container mx-auto px-6 py-8">
+                    
+                    <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                        <table class="table-auto w-full">
+                            <thead>
+                                <tr>
+                                    <th class="px-4 py-2 text-left">Title</th>
+                                    <th class="px-4 py-2 text-left">Category</th>
+                                    <th class="px-4 py-2 text-left">Collections</th>
+                                    <th class="px-4 py-2 text-left">Price ($)</th>
+                                    <th class="px-4 py-2 text-left">Expense ($)</th>
+
+                                    <th class="px-4 py-2"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border px-4 py-2">Shoes</td>
+                                    <td class="border px-4 py-2">Shoes</td>
+                                    <td class="border px-4 py-2">Trending</td>
+                                    <td class="border px-4 py-2">38.5</td>
+                                    <td class="border px-4 py-2">16.5</td>
+                                    <td class="border px-4 py-2 text-center">
+                                        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded">
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border px-4 py-2">Jeans</td>
+                                    <td class="border px-4 py-2">ZARA</td>
+                                    <td class="border px-4 py-2">Trending</td>
+                                    <td class="border px-4 py-2">308.5</td>
+                                    <td class="border px-4 py-2">106.5</td>
+                                    <td class="border px-4 py-2 text-center">
+                                        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded">
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border px-4 py-2">Shirt</td>
+                                    <td class="border px-4 py-2">NIKE</td>
+                                    <td class="border px-4 py-2">Trending</td>
+                                    <td class="border px-4 py-2">308.5</td>
+                                    <td class="border px-4 py-2">160.5</td>
+                                    <td class="border px-4 py-2 text-center">
+                                        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded">
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border px-4 py-2">T-Shirt</td>
+                                    <td class="border px-4 py-2">PUMA</td>
+                                    <td class="border px-4 py-2">Trending</td>
+                                    <td class="border px-4 py-2">138.5</td>
+                                    <td class="border px-4 py-2">116.5</td>
+                                    <td class="border px-4 py-2 text-center">
+                                        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded">
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="border px-4 py-2">Bat</td>
+                                    <td class="border px-4 py-2">CEAT</td>
+                                    <td class="border px-4 py-2">Trending</td>
+                                    <td class="border px-4 py-2">48.5</td>
+                                    <td class="border px-4 py-2">36.5</td>
+                                    <td class="border px-4 py-2 text-center">
+                                        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded">
+                                            <box-icon name='trash'></box-icon>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="flex justify-between items-center py-4">
+                            <button class="bg-zinc-300 hover:bg-zinc-400 text-zinc-800 font-bold py-2 px-4 rounded-l" onclick="window.location.href = './Collections.html'">
+                                Previous
+                            </button>
+                            <button class="bg-zinc-300 hover:bg-zinc-400 text-zinc-800 font-bold py-2 px-4 rounded-r" onclick="window.location.href = './Order.html'">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
